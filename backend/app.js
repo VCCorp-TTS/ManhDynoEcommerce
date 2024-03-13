@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const app = express();
 
-require("./config/connection.js");
+require("./config/config.js");
 
 dotenv.config();
 
