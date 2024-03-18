@@ -45,8 +45,8 @@
                             class="cursor-pointer text-blue-500 absolute transition-all duration-500 font-bold right-0 top-0 group-hover:right-[90%] opacity-0 group-hover:opacity-100">/</span>
                     </li>
                 </ul>
-                <button onclick="window.location='sign-in.html';" class=" mt-5 lg:mt-0 border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold
-                    hover:bg-blue-500 hover:text-white transition-all duration-300">
+                <button 
+                    class="mt-5 lg:mt-0 border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
                     Sign in
                 </button>
             </div>
@@ -55,33 +55,53 @@
 
     <!-- HEADER SECTION END -->
 
-    <!-- FORGOT PASSWORD FORM START -->
+    <!-- LOGIN FORM START -->
 
     <section class="container mx-auto px-5 py-10">
         <div class="w-full max-w-sm mx-auto">
             <h1 class="font-roboto text-2xl font-bold text-center text-[#0D2436] mb-8">
-                Forgot password
+                Sign in
             </h1>
             <form action="">
+                <!-- <div class="flex flex-col mb-6 w-full">
+                    <label for="name" class="text-[#5a7184] font-semibold block">
+                        Name
+                    </label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div> -->
                 <div class="flex flex-col mb-6 w-full">
                     <label for="email" class="text-[#5a7184] font-semibold block">
-                        Enter your email address
+                        Email
                     </label>
-                    <input type="email" id="email" placeholder="Enter email address"
+                    <input type="email" id="email" placeholder="Enter Email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                         class="placeholder:text-[#959ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border" />
                 </div>
-                <button onClick="window.location='change-password.html';"
+                <div class="flex flex-col mb-6 w-full">
+                    <label for="password" class="text-[#5a7184] font-semibold block">
+                        Password
+                    </label>
+                    <input type="password" id="password" placeholder="Enter Password"
+                        class="placeholder:text-[#959ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border" />
+                </div>
+                <a href="./forgot-password.html" class="text-sm font-semibold text-[#1565D8]">
+                    Forgot password?
+                </a>
+                <button type="submit"
                     class="bg-[#1565D8] text-white font-bold text-lg py-4 px-8 w-full rounded-lg my-6 disabled:opacity-70 disabled:cursor-not-allowed">
-                    Continue
+                    Sign in
                 </button>
+                <p class="text-sm font-semibold text-[#5a7184]">
+                    Do not have an account ?
+                    <a href="#" class="text-[#1565D8]">Sign up</a>
+                </p>
             </form>
         </div>
     </section>
 
 
 
-    <!-- FORGOT PASSWORD FORM END -->
+    <!-- LOGIN FORM END -->
 
 
     <!-- FOOTER SECTION START -->
