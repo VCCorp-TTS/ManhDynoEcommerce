@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Language Management</h1>
+      <div class="btn">
+        <button class="button" onclick="redirectToCreatePage()" >
+          Create Language
+        </button>
+        <button class="button" onclick="redirectToEditPage()" >Edit Language</button>
+        <button class="button">View List Language</button>
+        <button class="button">Delete Language</button>
+      </div>
+    </div>
+      
+
+    <script>
+        function redirectToCreatePage() {
+            window.location.href = "create.html";
+        }
+
+        function redirectToEditPage() {
+            window.location.href = "edit.html";
+        }
+        </script>
+
+
+  </body>
+</html>
