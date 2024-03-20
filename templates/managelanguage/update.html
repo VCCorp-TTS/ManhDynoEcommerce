@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Updating Language</h1>
+      
+
+      <div id="createLanguageForm" style="display: block;" class="language-form">
+        
+        <p>Select a language:</p>
+        <select id="commonLanguages" >
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+          <option value="Vietnamese">Vietnamese</option>
+
+          <!-- <option value="Other">Other</option> -->
+        </select>
+
+
+        <button class="button confirm-button" onclick="confirmNewLanguage()">
+          Confirm
+        </button>
+      </div>
+
+      <div id="languageTable" style="display: none">
+        <table class="language-table">
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>sign_in</td>
+            <td><input type="text" id="sign_in_value" /></td>
+          </tr>
+          <tr>
+            <td>email_label</td>
+            <td><input type="text" id="email_label_value" /></td>
+          </tr>
+          <tr>
+            <td>password_label</td>
+            <td><input type="text" id="password_label_value" /></td>
+          </tr>
+          <tr>
+            <td>forgot_password</td>
+            <td><input type="text" id="forgot_password_value" /></td>
+          </tr>
+          <tr>
+            <td>log_in</td>
+            <td><input type="text" id="log_in_value" /></td>
+          </tr>
+          <tr>
+            <td>no_account</td>
+            <td><input type="text" id="no_account_value" /></td>
+          </tr>
+          <tr>
+            <td>register_now</td>
+            <td><input type="text" id="register_now_value" /></td>
+          </tr>
+          <tr id="add-key-row">
+            <td><button class="add-key-button" onclick="addKeyRow()">Add Key</button></td>
+            <td></td>
+        </tr>
+        </table>
+        <button class="submit-button" onclick="submitLanguageValues()">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <script>
+
+      function confirmNewLanguage() {
+        const selectedLanguage =
+          document.getElementById("commonLanguages").value;
+        
+        document.getElementById("languageTable").style.display = "block";
+      }
+
+      function submitLanguageValues() {
+        // Get input values and process them as needed
+        alert("Language values submitted successfully!");
+      }
+
+      function addKeyRow() {
+            var table = document.querySelector('.language-table');
+            var newRow = table.insertRow(table.rows.length - 1);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            cell1.innerHTML = '<input type="text">';
+            cell2.innerHTML = '<input type="text">';
+        }
+
+        
+    </script>
+  </body>
+</html>
