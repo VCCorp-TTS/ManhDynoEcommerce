@@ -91,7 +91,7 @@ function updateCategory() {
       confirmButtonText: "Update",
       cancelButtonText: "Cancel",
       reverseButtons: true,
-      title: "Create new category",
+      title: "Edit category",
       input: "text",
       inputValue: "ReactJs",
       inputValidator: (value) => {
