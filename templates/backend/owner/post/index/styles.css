@@ -345,6 +345,23 @@
   border-radius: 50%;
 }
 
+.main__header-action .badge {
+  position: fixed;
+  top: 18px;
+  right: 7.5%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+  background: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .main__header-profile {
   position: relative;
   display: flex;
