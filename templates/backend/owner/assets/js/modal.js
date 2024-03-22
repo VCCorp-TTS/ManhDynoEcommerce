@@ -53,6 +53,7 @@ function addNewCategory() {
       reverseButtons: true,
       title: "Create new category",
       input: "text",
+      inputPlaceholder: "Input new category...",
       inputValidator: (value) => {
         if (!value) {
           return "You need to write something!";
