@@ -348,9 +348,9 @@
 }
 
 .main__header-action .badge {
-  position: absolute;
-  top: 16px;
-  right: 8.2%;
+  position: fixed;
+  top: 18px;
+  right: 7.5%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -535,13 +535,18 @@
   margin-left: 3px;
 }
 .edit {
-  background: #ffff00;
-  color: var(--grey-color) !important;
+  background: #ffc107;
+  color: #21251f !important;
+}
+.edit:hover {
+  background: #e0a800;
 }
 .delete {
-  background: var(--red-color);
+  background: #dc3545;
 }
-
+.delete:hover {
+  background: #c82333;
+}
 .modal__btn {
   display: inline-block;
   font-weight: normal;
@@ -601,7 +606,7 @@
   justify-content: center;
   width: 27%;
   margin-left: 72.1%;
-  margin-top: 5px;
+  margin-top: 15px;
   padding: 8px;
   border-radius: 5px;
   background: #fff;

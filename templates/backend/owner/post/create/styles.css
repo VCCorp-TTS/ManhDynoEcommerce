@@ -24,9 +24,11 @@
   --blue-color: #4070f4;
   --grey-color: #707070;
   --grey-color-light: #aaa;
-  --grey-light-color: #aaa;
   --red-color: #ff0000;
   --blue-light-color: #e4e9f7;
+  --grey-light-color: #f3f3f9;
+  --text-color: #000;
+  --grey-light-color-2: #f3f3f9;
 }
 
 /* =============== START SIDEBAR ====================*/
@@ -271,7 +273,7 @@
 
 .main {
   position: relative;
-  background: var(--white-color);
+  background: var(--grey-light-color-2);
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -351,9 +353,9 @@
 }
 
 .main__header-action .badge {
-  position: absolute;
-  top: 16px;
-  right: 8.2%;
+  position: fixed;
+  top: 18px;
+  right: 7.5%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -404,79 +406,6 @@
 
 /* =============== END HEADER DASHBOARD ====================*/
 
-/* =============== START FORM DASHBOARD ====================*/
-/* .main__dashboard {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.form {
-  margin: 80px auto;
-  width: 50%;
-}
-
-.form__title {
-  display: flex;
-  font-size: 23px;
-  justify-content: center;
-  margin-bottom: 30px;
-  color: var(--blue-color);
-}
-
-.alert__message {
-  padding: 0.8rem 1.4rem;
-  margin-bottom: 1rem;
-  border-radius: var(--card-border-radius-2);
-}
-
-.alert__message.error {
-  background: var(--color-red-light);
-  color: var(--color-red);
-}
-
-.alert__message.success {
-  background: var(--color-green-light);
-  color: var(--color-green);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.form input,
-.form textarea {
-  padding: 0.8rem 1.4rem;
-  background: #f6f6f6;
-  border-radius: 5px;
-  resize: none;
-  font-size: 0.9rem;
-  color: var(--color-white);
-  border: none;
-  outline: none;
-}
-
-.btn {
-  background: var(--blue-color);
-  color: var(--white-color);
-  padding: 10px 12px;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 0.8rem;
-  text-align: center;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-.btn:hover {
-  background: #0000ff;
-  color: var(--white-color);
-} */
-/* =============== END FORM DASHBOARD ====================*/
-
 /* ========================= START OF FORM  ============== */
 .main__dashboard {
   height: 100%;
@@ -524,7 +453,7 @@ form {
 .form textarea,
 .form select {
   padding: 0.8rem 1.4rem;
-  background: #f6f6f6;
+  background: var(--white-color);
   border-radius: 5px;
   resize: none;
   font-size: 0.9rem;
