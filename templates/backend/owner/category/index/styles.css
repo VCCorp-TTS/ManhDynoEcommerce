@@ -545,7 +545,6 @@
 .delete:hover {
   background: #c82333;
 }
-
 .modal__btn {
   display: inline-block;
   font-weight: normal;
@@ -606,7 +605,10 @@
   width: 27%;
   margin-left: 72.1%;
   margin-top: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f2f3c1 (fix conflicts feature/TTSMANH-21/create-html-page-for-viewing-categories)
   padding: 8px;
   border-radius: 5px;
   background: #fff;
