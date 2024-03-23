@@ -4,101 +4,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Blog Dashboard</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title> Admin Dashboard </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="sidebar">
-        <div class="sidebar__logo">
+        <div class="logo-details">
             <i class='bx bxl-c-plus-plus'></i>
-            <span class="sidebar__logo-title">CodingBlog</span>
+            <span class="logo_name">CodingLab</span>
         </div>
-        <ul class="sidebar__nav">
-            <li class="sidebar__nav-item">
+        <ul class="nav-links">
+            <li>
                 <a href="./dashboard.html">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="sidebar__nav-title">Dashboard</span>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <!-- <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Category</a></li>
+                </ul> -->
+            </li>
+            <!-- <li href="#">
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Create Category</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Post</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Create Post</a></li>
+                </ul>
+            </li> -->
+            <li>
+                <a href="../manage-user/manage-user.html">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">Users</span>
                 </a>
             </li>
-            <li class="sidebar__nav-item">
-                <div class="sidebar__link-dropdown">
-                    <a href="#">
-                        <i class="ri-list-view"></i>
-                        <span class="sidebar__nav-title">Category</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sidebar__nav-submenu">
-                    <li><a class="sidebar__nav-title" href="../category/index/categories.html">Category</a></li>
-                    <li><a href="../category/index/categories.html">Categories</a></li>
-                </ul>
-            </li>
-            <li class="sidebar__nav-item">
-                <div class="sidebar__link-dropdown">
-                    <a href="#">
-                        <i class="ri-blogger-line"></i>
-                        <span class="sidebar__nav-title">Post</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sidebar__nav-submenu">
-                    <li><a class="sidebar__nav-title" href="../post/index/posts.html">Post</a></li>
-                    <li><a href="../post/index/posts.html">Posts</a></li>
-                    <li><a href="../post/edit/edit.html">Edit Post</a></li>
-                    <li><a href="../post/create/create.html">Create Post</a></li>
-                </ul>
-            </li>
-            <li class="sidebar__nav-item">
+            <li>
                 <a href="#">
                     <i class='bx bx-line-chart'></i>
-                    <span class="sidebar__nav-title">Chart</span>
+                    <span class="link_name">Chart</span>
                 </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Chart</a></li>
+                </ul>
             </li>
-            <li class="sidebar__nav-item">
-                <div class="sidebar__link-dropdown">
+            <li>
+                <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-plug'></i>
-                        <span class="sidebar__nav-title">Plugins</span>
+                        <span class="link_name">Plugins</span>
                     </a>
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
-                <ul class="sidebar__nav-submenu">
-                    <li><a class="sidebar__nav-title" href="#">Plugins</a></li>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Plugins</a></li>
                     <li><a href="#">UI Face</a></li>
                     <li><a href="#">Pigments</a></li>
                     <li><a href="#">Box Icons</a></li>
                 </ul>
             </li>
-            <li class="sidebar__nav-item">
+            <li>
                 <a href="#">
                     <i class='bx bx-compass'></i>
-                    <span class="sidebar__nav-title">Explore</span>
+                    <span class="link_name">Explore</span>
                 </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Explore</a></li>
+                </ul>
             </li>
-            <li class="sidebar__nav-item">
+            <li>
                 <a href="#">
                     <i class='bx bx-history'></i>
-                    <span class="sidebar__nav-title">History</span>
+                    <span class="link_name">History</span>
                 </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History</a></li>
+                </ul>
             </li>
-            <li class="sidebar__nav-item">
+            <li>
                 <a href="#">
                     <i class='bx bx-cog'></i>
-                    <span class="sidebar__nav-title">Setting</span>
+                    <span class="link_name">Setting</span>
                 </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Setting</a></li>
+                </ul>
             </li>
-            <li class="sidebar__nav-item">
-                <div class="sidebar__profile">
-                    <div class="sidebar__profile-content">
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
                         <img src="../assets/images/avatar/avatar14.jpg" alt="profileImg">
                     </div>
-                    <div class="sidebar__profile-info">
-                        <div class="sidebar__profile-name">Dinomanh</div>
-                        <div class="sidebar__profile-job">Web Desginer</div>
+                    <div class="name-job">
+                        <div class="profile_name"></div>
+                        <div class="job">Web Desginer</div>
                     </div>
                     <i class='bx bx-log-out'></i>
                 </div>
@@ -117,9 +138,10 @@
                 </form>
             </div>
             <div class="main__header-action">
+                <!-- <nav> -->
                 <div class="header__language">
                     <div class="header__lang-selected">
-                        <img src="../assets/images/flags/united-states.png" alt="">
+                        <img src="../assets/images/flags/united-kingdom.png" alt="">
                         <span class="text">English</span>
                     </div>
                 </div>
@@ -133,6 +155,7 @@
                 <div class="main__header-profile">
                     <img src="../assets/images/avatar/avatar14.jpg" alt="">
                 </div>
+                <!-- </nav> -->
             </div>
         </div>
         <div class="main__dashboard">
