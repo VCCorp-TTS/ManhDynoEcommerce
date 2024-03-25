@@ -336,9 +336,15 @@
 }
 
 .main__header-action .badge {
+<<<<<<< HEAD
   position: fixed;
   top: 18px;
   right: 7.5%;
+=======
+  position: absolute;
+  top: 16px;
+  right: 8.2%;
+>>>>>>> 68b428a (feature/TTSMANH-21/create-html-page-for-viewing-categories)
   width: 20px;
   height: 20px;
   border-radius: 50%;
