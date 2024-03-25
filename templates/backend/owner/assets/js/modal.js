@@ -118,6 +118,7 @@ function updateCategory() {
     });
 }
 
+
 function addNewLanguage() {
   const obj = {
     language: "",
@@ -295,3 +296,4 @@ function deleteLanguage() {
       }
     });
 }
+
