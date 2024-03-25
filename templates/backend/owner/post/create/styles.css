@@ -29,18 +29,12 @@
   --grey-light-color: #f3f3f9;
   --text-color: #000;
   --grey-light-color-2: #f3f3f9;
-<<<<<<< HEAD
-<<<<<<<< HEAD:templates/backend/owner/post/create/styles.css
-========
 }
 
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
->>>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247:templates/backend/owner/post/index/styles.css
-=======
->>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247
 }
 
 /* =============== START SIDEBAR ====================*/
@@ -368,16 +362,6 @@
   position: fixed;
   top: 18px;
   right: 7.5%;
-<<<<<<< HEAD
-<<<<<<<< HEAD:templates/backend/owner/post/create/styles.css
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f2f3c1 (fix conflicts feature/TTSMANH-21/create-html-page-for-viewing-categories)
-========
->>>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247:templates/backend/owner/post/index/styles.css
-=======
->>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -428,10 +412,6 @@
 
 /* =============== END HEADER DASHBOARD ====================*/
 
-<<<<<<< HEAD
-<<<<<<<< HEAD:templates/backend/owner/post/create/styles.css
-=======
->>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247
 /* ========================= START OF FORM  ============== */
 .main__dashboard {
   height: 100%;
@@ -806,6 +786,3 @@ select {
 }
 
 /* =============== END PAGINATION ====================*/
->>>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247:templates/backend/owner/post/index/styles.css
-=======
->>>>>>> 514731b828f9fc32d429c1079ae1c738196f6247
