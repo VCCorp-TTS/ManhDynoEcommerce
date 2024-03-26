@@ -568,6 +568,10 @@
   color: #fff;
 }
 
+.modal__btn:hover {
+  cursor: pointer;
+}
+
 .modal__btn-create {
   background-color: #28a745;
   border-color: #28a745;
