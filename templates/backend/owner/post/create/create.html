@@ -70,45 +70,6 @@
                 </ul>
             </li>
             <li class="sidebar__nav-item">
-                <a href="#">
-                    <i class='bx bx-line-chart'></i>
-                    <span class="sidebar__nav-title">Chart</span>
-                </a>
-            </li>
-            <li class="sidebar__nav-item">
-                <div class="sidebar__link-dropdown">
-                    <a href="#">
-                        <i class='bx bx-plug'></i>
-                        <span class="sidebar__nav-title">Plugins</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sidebar__nav-submenu">
-                    <li><a class="sidebar__nav-title" href="#">Plugins</a></li>
-                    <li><a href="#">UI Face</a></li>
-                    <li><a href="#">Pigments</a></li>
-                    <li><a href="#">Box Icons</a></li>
-                </ul>
-            </li>
-            <li class="sidebar__nav-item">
-                <a href="#">
-                    <i class='bx bx-compass'></i>
-                    <span class="sidebar__nav-title">Explore</span>
-                </a>
-            </li>
-            <li class="sidebar__nav-item">
-                <a href="#">
-                    <i class='bx bx-history'></i>
-                    <span class="sidebar__nav-title">History</span>
-                </a>
-            </li>
-            <li class="sidebar__nav-item">
-                <a href="#">
-                    <i class='bx bx-cog'></i>
-                    <span class="sidebar__nav-title">Setting</span>
-                </a>
-            </li>
-            <li class="sidebar__nav-item">
                 <div class="sidebar__profile">
                     <div class="sidebar__profile-content">
                         <img src="../../assets/images/avatar/avatar14.jpg" alt="profileImg">
@@ -165,21 +126,51 @@
                     <input type="text" id="title" placeholder="Title..." />
                     <div class="form__select">
                         <div class="form__select-category">
-                            <label for="category">Select category:</label>
-                            <select id="category" name="category">
-                                <option value="1">Travel</option>
-                                <option value="2">Art</option>
-                                <option value="3">Science & Technology</option>
-                            </select>
+                            <label for="category">Category:</label>
+                            <div class="select__menu">
+                                <div class="select__menu-btn">
+                                    <span class="select__title">Select category</span>
+                                    <i class="bx bx-chevron-down"></i>
+                                </div>
+                                <ul class="select__menu-options">
+                                    <li class="select__option">
+                                        <span class="menu__option-text ">Travel</span>
+                                    </li>
+                                    <li class="select__option">
+                                        <span class="menu__option-text">Art</span>
+                                    </li>
+                                    <li class="select__option">
+                                        <span class="menu__option-text">Science & Technology</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="form__select-language">
-                            <label for="category">Select language:</label>
-                            <select id="language" name="language">
-                                <option value="1">English-UK (en_GB)</option>
-                                <option value="2">Tiếng Việt(vi_VN)</option>
-                                <option value="3">English-US (en_US)</option>
-                                <option value="3">France (fr_FR)</option>
-                            </select>
+                            <label for="category">Language:</label>
+                            <div class="select__menu">
+                                <div class=" select__menu-btn">
+                                    <span class="select__lang-title select__title">Select language</span>
+                                    <i class="bx bx-chevron-down"></i>
+                                </div>
+                                <ul class="select__menu-options">
+                                    <li class="select__option">
+                                        <img src="../../assets/images/flags/united-states.png" />
+                                        <span class="menu__option-text">English-US(en_US)</span>
+                                    </li>
+                                    <li class="select__option">
+                                        <img src="../../assets/images/flags/uk.png" />
+                                        <span class="menu__option-text ">English-UK(en_UK)</span>
+                                    </li>
+                                    <li class="select__option">
+                                        <img src="../../assets/images/flags/vietnam.png" alt="">
+                                        <span class="menu__option-text ">Tiếng Việt(vi_VI)</span>
+                                    </li>
+                                    <li class=" select__option">
+                                        <img src="../../assets/images/flags/france.png" alt="">
+                                        <span class="menu__option-text ">France(fr_FR)</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <label for="editor">Content:</label>
