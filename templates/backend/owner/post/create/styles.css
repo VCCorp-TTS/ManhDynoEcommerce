@@ -467,6 +467,7 @@ form {
   display: flex;
   flex-direction: column;
   flex: 1;
+
   position: relative;
 }
 .form .select__menu {
