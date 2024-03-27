@@ -33,14 +33,19 @@ for (var i = 0; i < optionsMenu.length; i++) {
   options.forEach((option) => {
     option.addEventListener("click", () => {
       let selectedOption = option.querySelector(".menu__option-text").innerText;
+      let srcImg = option.querySelector("img").src;
+      const selectMenuBtn = option.parentElement.parentElement.querySelector(
+        ".select__menu-img img"
+      );
       sBtn_text.innerText = selectedOption;
+      selectMenuBtn.src = srcImg;
+      selectMenuBtn.classList.remove("hide");
       option.parentElement.parentElement.classList.remove("active");
     });
   });
 }
 
-
 var logOutBtn = document.querySelector(".bx-log-out");
-logOutBtn.addEventListener("click", function() {
+logOutBtn.addEventListener("click", function () {
   window.location.href = "../login/index.html";
 });
