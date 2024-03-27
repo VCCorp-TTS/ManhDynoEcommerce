@@ -649,21 +649,22 @@ select {
 }
 
 .modal__btn {
-  display: inline-block;
-  font-weight: normal;
-  text-align: center;
-  white-space-collapse: collapse;
-  text-wrap: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid transparent;
-  margin: 0 0.5rem;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  border-radius: 0.25rem;
-  transition: all 0.15s ease-in-out;
-  color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+    color: #fff;
+    cursor: pointer;
 }
 .modal__btn-create {
   background-color: #28a745;
