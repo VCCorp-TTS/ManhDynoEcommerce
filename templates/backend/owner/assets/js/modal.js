@@ -174,7 +174,7 @@ function addNewLanguage() {
             text: "Language, Locale and Flag have been created.",
             icon: "success",
           });
-          window.location.href = `../../language/manage/manage.html?newLanguage=${obj.language}&newLocale=${obj.locale}&newFlag=${obj.flag}`;
+          window.location.href = `../language/index.html?newLanguage=${obj.language}&newLocale=${obj.locale}&newFlag=${obj.flag}`;
         }
       },
     })
@@ -244,7 +244,7 @@ function updateLanguage() {
             text: "Language, Locale and Flag have been updated.",
             icon: "success",
           });
-          window.location.href = `../../language/manage/manage.html?newLanguage=${obj.language}&newLocale=${obj.locale}&newFlag=${obj.flag}`;
+          window.location.href = `../language/index.html?newLanguage=${obj.language}&newLocale=${obj.locale}&newFlag=${obj.flag}`;
         }
       },
     })

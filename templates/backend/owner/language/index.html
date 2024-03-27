@@ -23,12 +23,12 @@
 
   <body>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const newLanguage = urlParams.get("newLanguage");
-        const newLocale = urlParams.get("newLocale");
-        const newFlag = urlParams.get("newFlag");
-        console.log(newLanguage, newLocale, newFlag);
-      </script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const newLanguage = urlParams.get("newLanguage");
+      const newLocale = urlParams.get("newLocale");
+      const newFlag = urlParams.get("newFlag");
+      console.log(newLanguage, newLocale, newFlag);
+    </script>
     <div class="sidebar">
       <div class="sidebar__logo">
         <i class="bx bxl-c-plus-plus"></i>
@@ -36,7 +36,7 @@
       </div>
       <ul class="sidebar__nav">
         <li class="sidebar__nav-item">
-          <a href="../../dashboard/dashboard.html">
+          <a href="../dashboard/index.html">
             <i class="bx bx-grid-alt"></i>
             <span class="sidebar__nav-title">Dashboard</span>
           </a>
@@ -51,32 +51,18 @@
           </div>
           <ul class="sidebar__nav-submenu">
             <li>
-              <a
-                class="sidebar__nav-title"
-                href="../../category/index/categories.html"
+              <a class="sidebar__nav-title" href="../category/index.html"
                 >Category</a
               >
             </li>
-            <li>
-              <a href="../../category/index/categories.html">Categories</a>
-            </li>
+            <li><a href="../category/index.html">Categories</a></li>
           </ul>
         </li>
-        <li class="sidebar__nav-item showMenu">
-          <div class="sidebar__link-dropdown">
-            <a href="#">
-              <i class="ri-blogger-line"></i>
-              <span class="sidebar__nav-title">Language</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sidebar__nav-submenu">
-            <li>
-              <a href="../../language/manage/manage.html" class="active"
-                >Manage Language</a
-              >
-            </li>
-          </ul>
+        <li class="sidebar__nav-item">
+          <a href="./index.html">
+            <i class="ri-blogger-line"></i>
+            <span class="sidebar__nav-title">Language</span>
+          </a>
         </li>
         <li class="sidebar__nav-item">
           <div class="sidebar__link-dropdown">
@@ -88,13 +74,11 @@
           </div>
           <ul class="sidebar__nav-submenu">
             <li>
-              <a class="sidebar__nav-title" href="../../post/index/posts.html"
-                >Post</a
-              >
+              <a class="sidebar__nav-title" href="../post/index.html">Post</a>
             </li>
-            <li><a href="../../post/index/posts.html">Posts</a></li>
-            <li><a href="../../post/edit/edit.html">Edit Post</a></li>
-            <li><a href="../../post/create/create.html">Create Post</a></li>
+            <li><a href="../post/index.html">Posts</a></li>
+            <li><a href="../post/edit/edit.html">Edit Post</a></li>
+            <li><a href="../post/create/create.html">Create Post</a></li>
           </ul>
         </li>
         <li class="sidebar__nav-item">
@@ -140,7 +124,7 @@
           <div class="sidebar__profile">
             <div class="sidebar__profile-content">
               <img
-                src="../../assets/images/avatar/avatar14.jpg"
+                src="../assets/images/avatar/avatar14.jpg"
                 alt="profileImg"
               />
             </div>
@@ -171,7 +155,7 @@
         <div class="main__header-action">
           <div class="header__language">
             <div class="header__lang-selected">
-              <img src="../../assets/images/flags/united-states.png" alt="" />
+              <img src="../assets/images/flags/united-states.png" alt="" />
               <span class="text">English</span>
             </div>
           </div>
@@ -183,7 +167,7 @@
             <i class="bx bx-moon icon"></i>
           </a>
           <div class="main__header-profile">
-            <img src="../../assets/images/avatar/avatar14.jpg" alt="" />
+            <img src="../assets/images/avatar/avatar14.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -223,9 +207,24 @@
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>newLanguage</td>
-                  <td>{newLocale}</td>
-                  <td>{newFlag}</td>
+                  <td>English</td>
+                  <td>en-US</td>
+                  <td><img src="../assets/images/flags/united-states.png" class="locale-flag" alt=""></td>
+
+                  <td>
+                    <button class="btn edit" onClick="updateLanguage()">
+                      <i class="bx bx-edit-alt"></i>
+                    </button>
+                    <button class="btn delete" onClick="deleteLanguage()">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Vietnamese</td>
+                  <td>vi-VI</td>
+                  <td><img src="../assets/images/flags/VietNam.png" class="locale-flag" alt=""></td>
 
                   <td>
                     <button class="btn edit" onClick="updateLanguage()">
@@ -273,8 +272,7 @@
         </div>
       </div>
     </div>
-    <script src="../../assets/js/sidebar.js"></script>
-    <script src="../../assets/js/modal.js"></script>
-    
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/modal.js"></script>
   </body>
 </html>
