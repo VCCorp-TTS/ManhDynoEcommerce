@@ -442,19 +442,25 @@ form {
   display: flex;
   flex-direction: column;
 }
-
-.form__select {
-  display: flex;
-  gap: 20px;
+.form input,
+.form textarea,
+.form select {
+  padding: 0.8rem 1.4rem;
+  background: var(--white-color);
+  border-radius: 5px;
+  resize: none;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.form__select-category,
-.form__select-language {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  position: relative;
+.form__select-language .select__menu-btn img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
-
 .form__select {
   display: flex;
   gap: 20px;
@@ -472,6 +478,13 @@ form {
   width: 100%;
   z-index: 100;
   margin-top: 27px;
+}
+.select__menu-img {
+  display: flex;
+  align-items: center;
+}
+.select__menu-img img {
+  margin-right: 8px;
 }
 
 .form .select__menu .select__menu-btn {
@@ -533,20 +546,6 @@ form {
   margin-left: 15px;
 }
 
-.form input,
-.form textarea,
-.form select {
-  padding: 0.8rem 1.4rem;
-  background: var(--white-color);
-  border-radius: 5px;
-  resize: none;
-  font-size: 0.9rem;
-  border: none;
-  outline: none;
-  margin-bottom: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
 .form label {
   font-weight: 500;
   margin-bottom: 0.3rem;
@@ -577,7 +576,12 @@ form {
   background: #0000ff;
   color: var(--white-color);
 }
-
+.form__select-language .select__option img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  overflow: hidden;
+}
 /* ========================= END OF FORM ============== */
 
 .ck-editor__editable[role="textbox"] {
@@ -588,7 +592,6 @@ form {
   margin: 20px auto;
 }
 
-/* =============== END TABLE ====================*/
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
