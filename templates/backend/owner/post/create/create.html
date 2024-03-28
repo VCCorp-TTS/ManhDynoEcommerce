@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/super-build/ckeditor.js"></script>
 </head>
 
@@ -26,24 +27,19 @@
             </li>
             <li class="sidebar__nav-item">
                 <div class="sidebar__link-dropdown">
-                    <a href="#">
+                    <a href="../../category/index.html">
                         <i class="ri-list-view"></i>
                         <span class="sidebar__nav-title">Category</span>
                     </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
                 </div>
-                <ul class="sidebar__nav-submenu">
-                    <li><a class="sidebar__nav-title" href="../../category/index.html">Category</a></li>
-                    <li><a href="../../category/index.html">Categories</a></li>
-                </ul>
             </li>
 
             <li class="sidebar__nav-item">
                 <a href="../../language/index.html">
-                    <i class="ri-blogger-line"></i>
+                    <i class="ri-translate"></i>
                     <span class="sidebar__nav-title">Language</span>
                 </a>
-        </li>
+            </li>
 
             <li class="sidebar__nav-item showMenu">
                 <div class="sidebar__link-dropdown">
@@ -111,9 +107,16 @@
                 <div class="alert__message error hide">
                     <p>This is an error message</p>
                 </div>
-                <form action="">
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" placeholder="Title..." />
+                <form>
+                    <div class="form__search">
+                        <label for="title">Title:</label>
+                        <div class="form__search-input">
+                            <input type="text" id="input-box" autocomplete="off" name="title" placeholder="Title..." />
+                            <i id="icon-drop" class="ri-arrow-down-s-fill hide"></i>
+                        </div>
+                        <div class="form__search-suggestion hide">
+                        </div>
+                    </div>
                     <div class="form__select">
                         <div class="form__select-category">
                             <label for="category">Category:</label>
@@ -138,26 +141,29 @@
                         <div class="form__select-language">
                             <label for="category">Language:</label>
                             <div class="select__menu">
-                                <div class=" select__menu-btn">
-                                    <span class="select__lang-title select__title">Select language</span>
+                                <div class="select__menu-btn">
+                                    <div class="select__menu-img">
+                                        <img class="hide" src="../../assets/images/flags/united-states.png" />
+                                        <span class="select__lang-title select__title">Select language</span>
+                                    </div>
                                     <i class="bx bx-chevron-down"></i>
                                 </div>
                                 <ul class="select__menu-options">
                                     <li class="select__option">
                                         <img src="../../assets/images/flags/united-states.png" />
-                                        <span class="menu__option-text">English-US(en_US)</span>
+                                        <span class="menu__option-text">English-US (en_US)</span>
                                     </li>
                                     <li class="select__option">
                                         <img src="../../assets/images/flags/uk.png" />
-                                        <span class="menu__option-text ">English-UK(en_UK)</span>
+                                        <span class="menu__option-text ">English-UK (en_UK)</span>
                                     </li>
                                     <li class="select__option">
                                         <img src="../../assets/images/flags/vietnam.png" alt="">
-                                        <span class="menu__option-text ">Tiếng Việt(vi_VI)</span>
+                                        <span class="menu__option-text ">Tiếng Việt (vi_VI)</span>
                                     </li>
-                                    <li class=" select__option">
+                                    <li class="select__option">
                                         <img src="../../assets/images/flags/france.png" alt="">
-                                        <span class="menu__option-text ">France(fr_FR)</span>
+                                        <span class="menu__option-text ">France (fr_FR)</span>
                                     </li>
                                 </ul>
                             </div>
