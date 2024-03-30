@@ -792,6 +792,10 @@ body {
   color: #fff;
   background: #4070f4;
 }
+.pagination__btn-links a.active {
+  color: #fff;
+  background: #4070f4;
+}
 
 .active {
   background: #4070f4;
