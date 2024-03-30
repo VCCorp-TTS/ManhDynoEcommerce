@@ -695,10 +695,10 @@
   background: #4070f4;
 }
 
+
 .swal2-html-container  h4{
   margin-top: 20px;
 }
-
 
 .locale-flag {
   width: 10%;
@@ -706,7 +706,9 @@
   
 }
 .swal2-input {
+
     width: 98%;
+
     margin-left: 0;
     margin-right: 0px;
 }
