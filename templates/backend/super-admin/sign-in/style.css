@@ -1,16 +1,5 @@
-/* Header */
-.header-container {
-    display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-container img {
-    width: 4rem;
+body {
+    background-color: #252526;
 }
 
 /* Form */
@@ -32,7 +21,7 @@
     line-height: 2rem;
     font-weight: 700;
     text-align: center;
-    color: #0D2436;
+    color: #3682c0;
 }
 
 .form-group {
@@ -45,7 +34,7 @@
 .form-label {
     display: block;
     font-weight: 600;
-    color: #5a7184;
+    color: #7195b4;
 }
 
 .form-input {
@@ -68,5 +57,5 @@
     line-height: 1.75rem;
     font-weight: 700;
     color: #ffffff;
-    background-color: #1565D8;
+    background-color: #2e83c5;
 }
