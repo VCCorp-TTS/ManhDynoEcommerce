@@ -21,7 +21,7 @@ body {
     line-height: 2rem;
     font-weight: 700;
     text-align: center;
-    color: #3682c0;
+    color: #c9dbea;
 }
 
 .form-group {
@@ -34,7 +34,7 @@ body {
 .form-label {
     display: block;
     font-weight: 600;
-    color: #7195b4;
+    color: #b7cbdd;
 }
 
 .form-input {
@@ -45,7 +45,7 @@ body {
     border-width: 1px;
     outline-style: none;
     font-weight: 600;
-    color: #0D2436;
+    color: #c1d6e6;
 }
 
 #form button {
