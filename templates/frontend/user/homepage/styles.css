@@ -126,6 +126,10 @@ nav ul li a:hover {
   font-family: sans-serif; /* Make sure you include a font-family */
 }
 
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -212,7 +216,6 @@ nav ul li a:hover {
 }
 
 .main-container p {
-  
   margin-left: 100px;
   color: #183b56;
   line-height: 36px;
@@ -267,6 +270,14 @@ input:focus {
   margin-bottom: 20px;
 }
 
+.popular-tags span {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 20px;
+  color: #5a7184;
+}
+
 .popular-tags button {
   padding: 5px 10px;
   margin-right: 10px;
@@ -290,6 +301,10 @@ input:focus {
   margin-left: 110px;
   margin-right: 110px;
 }
+
+.author-avatar{
+  margin-right: 10px;
+}
 .author-avatar img {
   border-radius: 50%; /* Creates a circular avatar */
   width: 50px; /* Adjust size as needed */
@@ -303,6 +318,13 @@ input:focus {
   /* justify-content: space-between; */
 }
 
+.author-verify {
+  display: flex;
+}
+
+.author-verify i {
+  margin-right: 5px;
+}
 .publish-date {
   font-size: 14px;
   position: absolute;
@@ -530,7 +552,6 @@ input:focus {
     font-size: 16px;
     margin-left: 24px;
     margin-right: 24px;
-
   }
 
   .left-column-container .search-bar {
@@ -552,5 +573,5 @@ input:focus {
 
   .hamburger-menu {
     margin-right: 0;
-}
+  }
 }
