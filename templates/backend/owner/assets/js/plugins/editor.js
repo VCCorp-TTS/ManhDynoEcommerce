@@ -1,3 +1,4 @@
+
 CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
   toolbar: {
     items: [
@@ -166,8 +167,7 @@ CKEDITOR.ClassicEditor.create(document.getElementById("editor-vn"), {
       "insertTable",
       "mediaEmbed",
       "codeBlock",
-      "specialCharacters",
-      "|",
+      "specialCharacters"
     ],
     shouldNotGroupWhenFull: true,
   },
@@ -378,6 +378,7 @@ CKEDITOR.ClassicEditor.create(document.getElementById("editor-fr"), {
     options: [10, 12, 14, "default", 18, 20, 22],
     supportAllValues: true,
   },
+
   link: {
     decorators: {
       addTargetToExternalLinks: true,
