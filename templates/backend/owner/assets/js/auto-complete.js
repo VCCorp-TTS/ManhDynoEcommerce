@@ -33,6 +33,7 @@ if (inputBox) {
   });
 }
 
+
 function display(result) {
   const content = result.map((list) => {
     return (

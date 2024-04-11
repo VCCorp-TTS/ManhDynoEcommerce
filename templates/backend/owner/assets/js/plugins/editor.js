@@ -1,3 +1,4 @@
+
 CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
   toolbar: {
     items: [
@@ -166,8 +167,7 @@ CKEDITOR.ClassicEditor.create(document.getElementById("editor-vn"), {
       "insertTable",
       "mediaEmbed",
       "codeBlock",
-      "specialCharacters",
-      "|",
+      "specialCharacters"
     ],
     shouldNotGroupWhenFull: true,
   },
