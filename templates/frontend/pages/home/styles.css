@@ -948,9 +948,40 @@ footer {
   }
 }
 
-
 @media (max-width: 576px) {
-  
+  /*============================================================ HEADER ================================================================*/
+
+  .logo i {
+    font-size: 24px;
+  }
+
+  .sidebar__logo-title {
+    font-size: 20px;
+  }
+
+  /*============================================================ Giới thiệu trang ================================================================*/
+
+  .left-column-container h1,
+  .left-column-container p {
+    display: none;
+  }
+  .left-column-container .search-bar {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+  }
+
+  .left-column-container .popular-tags {
+    display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .left-column-container .popular-tags button {
+    margin-bottom: 10px;
+  }
+
+  /*============================================================ CARD ================================================================*/
   .author-info {
     margin-top: 20px;
   }
@@ -964,38 +995,9 @@ footer {
   .card .card-body .author-verify p {
     font-size: 14px;
   }
- 
-  .left-column-container h1,
-  .left-column-container p {
-    display: none;
-  }
-  
-
-  .left-column-container .search-bar {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .left-column-container .popular-tags {
-    margin-left: 24px;
-    margin-right: 24px;
-    
-  }
-  .left-column-container .popular-tags button {
-    margin-bottom: 10px;
-  }
 
   #author-name {
     width: 150px;
-  }
-  .sidebar__logo-title {
-    font-size: 18px;
-  }
-  .logo i {
-    font-size: 18px;
-  }
-  .wrapper .header .header__action .dropdown .btn img,
-  .header__action .dropdown.show img {
-    width: 24px;
   }
 
   .author-avatar img {
@@ -1004,10 +1006,6 @@ footer {
   }
   .author-avatar {
     margin-right: 2px;
-  }
-  .container-fluid .row {
-    /* margin-top: 100px;
-     */
   }
 
   .card .card-body .author-name {
@@ -1028,18 +1026,16 @@ footer {
     margin-top: 20px;
     position: relative;
   }
-  .footer-clean .col-sm-4 {
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .publish-date {
     right: -12px;
     padding: 0;
     font-size: 12px;
   }
-  .footer-clean .row-footer {
-    margin-left: 0;
-    margin-right: 0;
+
+  /*============================================================ FOOTER ================================================================*/
+
+  .footer__container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
 }
